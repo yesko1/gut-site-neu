@@ -10,7 +10,6 @@ function fetchBitcoinPrice() {
         .then(response => response.json())
         .then(data => {
             document.getElementById('price-value').innerText = `$${data.bpi.USD.rate}`;
-            // Weitere Chart-Logik hier...
         });
 }
 
@@ -27,7 +26,6 @@ function fetchHashrate() {
         .then(response => response.text())
         .then(data => {
             document.getElementById('hashrate-value').innerText = `${data} TH/s`;
-            // Weitere Chart-Logik hier...
         });
 }
 
